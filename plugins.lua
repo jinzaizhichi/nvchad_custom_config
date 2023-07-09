@@ -60,6 +60,13 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
+      {'wakatime/vim-wakatime',
+     event = "VeryLazy",
+    --  config = function()
+    --   vim.g.wakatime_api_key = vim.fn.system("pass show wakatime/api")
+    -- end,
+    },
+
 }
 
 return plugins
