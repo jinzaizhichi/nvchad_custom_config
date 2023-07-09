@@ -70,8 +70,9 @@ local plugins = {
   {
     "vim-crystal/vim-crystal",
     -- ft="crystal",
-    event = "VeryLazy",
-    config = function()
+    -- event = "VeryLazy",
+    lazy = false,
+    config = function(_)
       -- vim.g.crystal_auto_format = 1
       vim.g.crystal_auto_format = 1
     end,
