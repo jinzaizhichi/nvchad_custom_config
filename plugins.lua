@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -60,19 +60,20 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
-      {'wakatime/vim-wakatime',
-      event = "VeryLazy",
+  {
+    "wakatime/vim-wakatime",
+    event = "VeryLazy",
     --  config = function()
     --   vim.g.wakatime_api_key = vim.fn.system("pass show wakatime/api")
     -- end,
-    },
-    {
-     'vim-crystal/vim-crystal',
-       -- ft="crystal",
-     event = "VeryLazy",
-     config = function()
-        -- vim.g.crystal_auto_format = 1
-           vim.g.crystal_auto_format = 1
+  },
+  {
+    "vim-crystal/vim-crystal",
+    -- ft="crystal",
+    event = "VeryLazy",
+    config = function()
+      -- vim.g.crystal_auto_format = 1
+      vim.g.crystal_auto_format = 1
     end,
   },
 }
