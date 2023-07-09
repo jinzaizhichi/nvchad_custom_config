@@ -61,7 +61,7 @@ local plugins = {
   --   lazy = false,
   -- }
       {'wakatime/vim-wakatime',
-     event = "VeryLazy",
+      event = "VeryLazy",
     --  config = function()
     --   vim.g.wakatime_api_key = vim.fn.system("pass show wakatime/api")
     -- end,
@@ -70,7 +70,7 @@ local plugins = {
      'vim-crystal/vim-crystal',
        ft="crystal",
      -- event = "VeryLazy",
-     config = function(_)
+     config = function()
         vim.g.crystal_auto_format = 1
     end
   }
