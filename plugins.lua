@@ -110,6 +110,9 @@ local plugins = {
    {'hashivim/vim-terraform',
       event = "BufRead",
     },
+  {
+    "voldikss/vim-translate-me"
+  },
 }
 
 return plugins
